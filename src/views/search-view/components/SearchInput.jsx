@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Form, Field, Input, SubmitButton } from './styles/search-input-styles';
 
 export default function SearchInput(props) {
   const [searchTerm, setSearchTerm] = useState('');
@@ -25,10 +26,18 @@ export default function SearchInput(props) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <label htmlFor='name'>Enter your searchTerm: </label>
-      <input id='name' type='text' value={searchTerm} onChange={handleChange} />
-      <button type='submit'>Submit</button>
-    </form>
+    <Form onSubmit={handleSubmit}>
+      <Field>
+        <Input
+          id='name'
+          type='text'
+          value={searchTerm}
+          placeholder='Enter search query here'
+          onChange={handleChange}
+        />
+      </Field>
+
+      <SubmitButton type='submit'>Submit</SubmitButton>
+    </Form>
   );
 }
