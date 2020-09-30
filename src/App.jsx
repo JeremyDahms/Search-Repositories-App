@@ -17,7 +17,7 @@ class App extends React.Component {
       <AppView>
         <Router>
           <Switch>
-            <Route exact path='/' component={SearchView} />
+            <Route path='/' component={SearchView} />
             <Route
               path='/details/:id'
               render={(props) => <DetailsView {...props} />}
