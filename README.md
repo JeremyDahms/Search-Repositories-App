@@ -1,5 +1,7 @@
 # Search-Repositories-App
-App built with React and Express that queries Github's API for Repositories.
+> :warning: This App was built as part of a take-home coding test and is not meant to look good or contain any useful functionality.  
+
+App built with React and Express that queries Github's API for Repositories.  
 
 This is a very simple application that allows users to query the Github repository search API by typing into a textbox and clicking submit. 
 The user will then see the results of their query and can select individual repositories to view more detailed information about them.
